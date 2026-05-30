@@ -1,0 +1,355 @@
+hmn tyj<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Nanna ❤️</title>
+
+<style>
+    
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+.gallery img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#9fd3ff,#ffd1ea);
+    overflow-x:hidden;
+    color:#fff;
+}
+
+/* Floating Hearts */
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-100px;
+    color:#ff4f81;
+    font-size:25px;
+    animation:float 10s linear infinite;
+}
+
+.hearts span:nth-child(1){left:10%; animation-delay:0s;}
+.hearts span:nth-child(2){left:20%; animation-delay:2s;}
+.hearts span:nth-child(3){left:35%; animation-delay:4s;}
+.hearts span:nth-child(4){left:50%; animation-delay:1s;}
+.hearts span:nth-child(5){left:65%; animation-delay:6s;}
+.hearts span:nth-child(6){left:80%; animation-delay:3s;}
+.hearts span:nth-child(7){left:90%; animation-delay:5s;}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) scale(1);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh) scale(1.5);
+        opacity:0;
+    }
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 15px;
+}
+
+.card{
+    width:100%;
+    max-width:950px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border-radius:30px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,0.2);
+    animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.title{
+    font-size:60px;
+    font-family:'Dancing Script',cursive;
+    color:#340beb;
+    margin-bottom:10px;
+}
+
+.name{
+    font-size:42px;
+    color:#df0672;
+    margin-bottom:10px;
+}
+
+.date{
+    font-size:18px;
+    margin-bottom:25px;
+    color:#0770e9;
+}
+
+.main-image{
+    width:222px;
+    height:292px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+    border:3px solid #000;
+}
+.message{
+    background:rgba(20, 20, 20, 0.15);
+    padding:25px;
+    border-radius:20px;
+    line-height:1.9;
+    font-size:18px;
+    margin-top:20px;
+}
+
+.gallery-title{
+    font-size:40px;
+    margin-top:45px;
+    margin-bottom:25px;
+    font-family:'Dancing Script',cursive;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:18px;
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.gallery img{
+    width: 220px;
+    height: 290px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid white;
+    box-shadow:0 5px 15px rgba(65, 59, 59, 0.3);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:35px;
+    font-size:30px;
+    font-family:'Dancing Script',cursive;
+    color:#ffd700;
+}
+.memories{
+    text-align:center;
+    margin-top:40px;
+}
+
+.memory-box{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    width:90%;
+    max-width:900px;
+    margin:20px auto;
+}
+
+.memory-box img{
+    width:100%;
+    height: 220px;;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media(max-width:768px){
+    .title{
+        font-size:32px;
+    }
+    .name{
+        font-size:22px;
+    }
+    .main-image{
+        width:180px;
+        height: 220px;
+    }
+    .message{
+        font-size:14px;
+    }
+    .gallery img{
+        width:160px;
+        height:220px;
+    }
+}
+
+.title{
+    font-size:42px;
+}
+
+.name{
+    font-size:32px;
+}
+
+img.main-image{
+    width: 290px;
+    height: 450px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+}
+
+.message{
+    font-size:16px;
+}
+.memories{
+    text-align:center;
+    margin:50px 0;
+}
+
+.memories{
+    text-align:center;
+    margin:50px 0;
+}
+.memory-box{
+    display:flex
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>❤️</span>
+    <span>💞</span>
+    <span>💕</span>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h1 class="title">Happy Birthday 🎂</h1>
+
+<h2 class="name">Nanna ❤️</h2>
+
+<div class="date">24-07-2026</div>
+
+<!-- Main Image -->
+
+<img src="main.jpg" class="main-image">
+
+<div class="message">
+
+Happy Birthday Nanna ❤️ <br><br>
+
+Nuvvu naa life lo vachaka love ante enti ani ardham ayyindi.
+Nuvvu naa person, naa peace, naa biggest happiness.
+Naa bad days lo comfort, naa smile venaka reason nuvve. <br><br>
+
+Ninnu “nanna” ani pilavadam lo naaku oka special feeling untundi…
+because you are not just my love, you feel like my home 🥺❤️ <br><br>
+
+Ee birthday ki niku endless happiness, success, peace anni ravali.
+Kaani selfish ga okkate korukunta…
+life long ila naathone undali 😌💞 <br><br>
+
+Once again Happy Birthday to my favourite person,
+my love, my nanna ❤️🎂
+
+</div>
+
+<h2 class="gallery-title" style="color: #09c3e4;">Mr. Srini💖</h2>
+
+<div class="message">
+NANI BABU..
+</div>
+
+<div class="gallery">
+
+    <img src="./photo13.jpg.jpeg" alt="">
+    <img src="./photo1.jpg.jpg" alt="">
+    <img src="./photo2.jpg.jpg" alt="">
+    <img src="./photo3.jpg.jpg" alt="">
+    <img src="./photo4.jpg.jpg" alt="">
+    <img src="./photo5.jpg.jpg" alt="">
+
+</div>
+
+<div class="footer">
+Made with Love 💞 
+</div>
+
+</div>
+
+</div>
+</body>
+<section class="memories">
+    <h2 style="color:#ff4f81;">❤️Togetherness❤️</h2> 
+   
+    <div class="memory-box">
+        <img src="photo6.jpg.jpeg">
+        <img src="photo7.jpg.jpeg">
+        <img src="photo8.jpg.jpeg">
+        <img src="photo9.jpg.jpeg">
+    </div>
+</section> 
+<section class="memories">
+    <div class="memory-box">
+        <img src="photo10.jpg.jpeg">
+        <img src="photo11.jpg.jpeg">
+        <img src="photo12.jpg.jpeg">
+    </div>
+</section> 
+</html>
